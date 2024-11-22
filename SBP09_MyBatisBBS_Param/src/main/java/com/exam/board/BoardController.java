@@ -25,6 +25,7 @@ public class BoardController {
 
 	@RequestMapping("/boardList")
 	public String boardList(Model model) {
+		model.addAttribute("boardCnt", boardDao.mtdBoardCnt());
 		model.addAttribute("boardList", boardDao.mtdBoardList());
 		return "boardList";
 	}

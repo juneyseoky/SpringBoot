@@ -13,6 +13,7 @@
 	<div id="wrap">
 		<h1>BBS 목록보기(MyBatis_Param)</h1>
 		<hr>
+		<p style="text-align: right;">총 게시글 수 : ${boardCnt}</p>
 		<table>
 			<tbody>
 				<tr>

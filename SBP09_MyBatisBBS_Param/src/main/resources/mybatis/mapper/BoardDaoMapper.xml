@@ -19,4 +19,8 @@
 	<delete id="mtdBoardDelete">
 		delete from board where num = #{param1}
 	</delete>
+	
+	<select id="mtdBoardCnt" resultType="_int">
+		select count(*) from board
+	</select>
 </mapper>

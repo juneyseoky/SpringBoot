@@ -14,4 +14,5 @@ public interface BoardDao {
 	public BoardDto mtdBoardView(int num);
 	public int mtdBoardWriter(Map<String, String> map);
 	public int mtdBoardDelete(int num);
+	public int mtdBoardCnt();
 }
