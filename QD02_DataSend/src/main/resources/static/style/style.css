@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+div#wrap{
+	width: 400px;
+	margin: 0 auto;
+	border: 2px solid #ccc;
+	padding: 10px;
+}
+form{
+	width: 100%;
+	margin: 0 10px;
+}
+
+input{
+padding: 3px 5px;	
+}
+
+label{
+	margin: 10px;
+	display: block;
+}
+label>span{
+	display: inline-block;
+	width: 100px;
+}
+
+form>span{
+	font-size: 10px;
+	color: #aaa;
+}
+button{
+	display: block;
+	width: 350px;
+	margin: 10px auto;
+	padding: 5px;
+	background-color: #03b070;
+	color: #eee;
+	border: none;
+	border-radius:10px;
+	cursor: pointer;
+}
