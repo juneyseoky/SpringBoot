@@ -15,7 +15,7 @@ public interface GoodsDao {
 	// 상품 등록
 	void goodsReg(Map<String,String> map);
 	// 상품 검색
-	GoodsDto searchGoods(String keyword);
+	List<GoodsDto> searchGoods(String keyword);
 	// 상품 삭제
-	int deleteGoods(int num);
+	int deleteGoods(List<String> list);
 }

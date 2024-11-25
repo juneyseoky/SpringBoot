@@ -1,0 +1,116 @@
+@charset "UTF-8";
+@import url(style_Reset.css);
+
+
+div#wrap {
+    width: 360px;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    margin: 10px auto;
+}
+
+div#header>span{
+
+	text-indent: 30px;
+	display: inline-block;
+	width: 150px;
+	font-size: 20px;
+	font-weight: bold;
+	
+}
+div#header{
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 10px;
+}
+button{
+	font-size: 14px;
+	padding: 4px 9px;
+	cursor: pointer;
+}
+label{
+	display: block;
+	margin: 10px 15px;
+}
+label>span{
+	font-size: 15px;
+	font-weight: bold;
+	display: inline-block;
+	width: 120px;
+	height: 28px;
+	padding: 6px 5px;
+	background-color: rgba(69, 104, 177, 0.2);
+}
+label:not(:nth-child(3)) span::before {
+    content: '*';  /* * 기호 추가 */
+    margin-right: 5px;  /* * 기호와 span 요소 사이 간격 */
+    color: #f80;
+}
+label input[type=text]{
+	font-size: 14px;
+	padding: 4px 9px;
+}
+btnArea{
+	display: inline;;
+	text-align: center;
+}
+#btnArea>span{
+	display: inline-block;
+	width: 134px;
+	font-size: 12px;
+	color: #aaa;
+	padding-left: 10px;
+}
+#btnArea button{
+	display: inline-block;
+	width: 80px;
+}
+
+div#wrap.listWrap{
+	width: 620px;
+}
+div#tableHeader{
+	width: 100%;
+	background-color: rgba(0,136,255,0.3);
+}
+div.goodsRow{
+	border-bottom: 1px solid #ccc;
+	padding: 5px 10px;
+}
+div.goodsRow span{
+	text-align: center;
+}
+div.goodsRow span:nth-child(1){
+	width: 30px;	
+}
+div.goodsRow span:nth-child(2){
+	width: 40px;
+}
+div.goodsRow span:nth-child(3){
+	flex: 1;
+}
+div.goodsRow span:nth-child(4){
+	width: 80px;
+}
+div.goodsRow span:nth-child(5){
+	width: 100px;
+}
+div.goodsRow span:nth-child(6){
+	width: 50px;
+}
+div.goodsRow span:nth-child(7){
+	width: 120px;
+}
+div#searchArea{
+	display: flex;
+	justify-content: space-around;
+}
+div#searchArea{
+	margin-top: 10px;
+	font-size: 18px;
+}
+div#searchArea input[type=text]{
+	padding: 4px 8px;
+	transform : translateY(-1px);
+}

@@ -6,4 +6,30 @@
 	<select id="selectGoods">
 		select * from goodsList order by num desc
 	</select>
+	
+	<insert id="goodsReg" parameterType="java.util.Map">
+		insert into goodsList (goodsCode, goodsName, price, cnt) 
+		values (#{goodsCode},#{goodsName},#{price},#{cnt})
+	</insert>
+	
+	<select id="searchGoods">
+		<bind name="searchkey" value="'%' + goodsName + '%'"/>
+		select * from goodsList where goodsName like #{searchkey}
+		or goodsCode like #{searchkey}
+		order by num desc
+	</select>
+	
+<!-- 	<delete id="deleteGoods"> -->
+<!-- 		delete from goodsList where num = #{param} -->
+<!-- 	</delete> -->
+
+<!-- MyBatis 동적 SQL -->
+	<delete id="deleteGoods">
+		delete from goodsList where
+<!-- 		collection은 매개변수명이 들어가야 된다. -->
+		<foreach collection="list" item="item" index="index"
+			open="num in (" separator="," close=")">
+			#{item}
+		</foreach>
+	</delete>
 </mapper>
